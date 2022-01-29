@@ -20,7 +20,7 @@ func incrementing() {
 func decrementing() {
 	//TODO: decrement i 1000000 times
 
-	for i < 100000 {
+	for i > -100000 {
 		i--
 	}
 }
