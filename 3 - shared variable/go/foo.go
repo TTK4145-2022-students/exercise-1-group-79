@@ -12,31 +12,14 @@ var i = 0
 
 func incrementing() {
 	//TODO: increment i 1000000 times
-<<<<<<< HEAD
 	for x := 0; x < 1000000; x++ {
-=======
-<<<<<<< HEAD
-	for i < 1000000 {
-=======
-	for i < 100000 {
->>>>>>> e6ebb58b85ac9ef50ecfc490777d22c2f4165f7a
->>>>>>> 02fbf04d4ed4dd56ca2e8120efd8ea578241eda8
 		i++
 	}
 }
 
 func decrementing() {
 	//TODO: decrement i 1000000 times
-<<<<<<< HEAD
 	for y := 0; y < 1000000; y++ {
-=======
-<<<<<<< HEAD
-	for i > -1000000 {
-=======
-
-	for i > -100000 {
->>>>>>> e6ebb58b85ac9ef50ecfc490777d22c2f4165f7a
->>>>>>> 02fbf04d4ed4dd56ca2e8120efd8ea578241eda8
 		i--
 	}
 }
@@ -50,10 +33,6 @@ func main() {
 	// TODO: Spawn both functions as goroutines
 	go incrementing()
 	go decrementing()
-<<<<<<< HEAD
-=======
-
->>>>>>> e6ebb58b85ac9ef50ecfc490777d22c2f4165f7a
 	// We have no direct way to wait for the completion of a goroutine (without additional synchronization of some sort)
 	// We will do it properly with channels soon. For now: Sleep.
 	time.Sleep(500 * time.Millisecond)
