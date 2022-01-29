@@ -12,20 +12,22 @@ var i = 0
 
 func incrementing() {
 	//TODO: increment i 1000000 times
-	for i < 1000000 {
+	for x := 0; x < 1000000; x++ {
 		i++
 	}
 }
 
 func decrementing() {
 	//TODO: decrement i 1000000 times
-	for i > -1000000 {
+	for y := 0; y < 1000000; y++ {
 		i--
 	}
 }
 
 func main() {
 	// What does GOMAXPROCS do? What happens if you set it to 1?
+	// GOMAXPROCS sets the maximum number of CPUs(threads) that can be executing simultaneously
+	// There is not ouput when the number of CPUs are set to 1
 	runtime.GOMAXPROCS(2)
 
 	// TODO: Spawn both functions as goroutines
