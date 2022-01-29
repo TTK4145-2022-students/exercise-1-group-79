@@ -27,7 +27,7 @@ func decrementing() {
 
 func main() {
 	// What does GOMAXPROCS do? What happens if you set it to 1?
-	runtime.GOMAXPROCS(1)
+	runtime.GOMAXPROCS(2)
 
 	// TODO: Spawn both functions as goroutines
 	go incrementing()
