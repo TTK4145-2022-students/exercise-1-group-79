@@ -20,7 +20,6 @@ Why would we use multiple threads? What kinds of problems do threads solve?
 
 Some languages support "fibers" (sometimes called "green threads") or "coroutines"? What are they, and why would we rather use them over threads?
 > Fibers unlike threads are a sequence of instructions which are a subset of a process which run independently of a kernel scheduler. Fibers can be said to be a subset of a thread for threads that have multiple fibres running concurrently.
-
 Fibers employ cooperative multitasking as compared to threads which use preemptive scheduling or multitasking. In networking, fibers are used in applications where softblocking is required so as to not interrrupt the CPU. The main thread is able to continue what it is doing and then yield to the fibre when it is done. The efficiency of the CPU is maximised when threads are used.
 
 Does creating concurrent programs make the programmer's life easier? Harder? Maybe both?
